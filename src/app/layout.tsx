@@ -1,3 +1,4 @@
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import "./globals.css";
 import { Poppins } from "next/font/google";
@@ -21,6 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
+      <SpeedInsights />
       <body className={`bg-[var(--aurora-foreground)] ${poppins}`}>
         <Header />
         {children}
