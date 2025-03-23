@@ -7,8 +7,8 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const galleryImages = {
   todos: [
-    "/buques/buque1.jpg",
-    "/arranjos/arranjo1.jpeg",
+    "/buques/buque1.png",
+    "/arranjos/arranjo1.png",
     "/buques/buque2.png",
     "/arranjos/arranjo2.png",
     "/buques/buque3.png",
@@ -17,14 +17,14 @@ const galleryImages = {
     "/buques/buque5.png",
   ],
   buques: [
-    "/buques/buque1.jpg",
+    "/buques/buque1.png",
     "/buques/buque2.png",
     "/buques/buque3.png",
     "/buques/buque4.png",
     "/buques/buque5.png",
   ],
   arranjos: [
-    "/arranjos/arranjo1.jpeg",
+    "/arranjos/arranjo1.png",
     "/arranjos/arranjo2.png",
     "/arranjos/arranjo3.png",
   ],

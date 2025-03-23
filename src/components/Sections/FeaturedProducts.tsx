@@ -26,14 +26,14 @@ export default function FeaturedProducts() {
     },
     {
       name: "Buquê Rosa",
-      image: "/buques/buque1.jpg?height=256&width=384&text=Arranjo+Elegância",
+      image: "/buques/buque1.png?height=256&width=384&text=Arranjo+Elegância",
       price: "R$ 249,90",
       tag: "Novo",
     },
     {
       name: "Solitário Rosa",
       image:
-        "/arranjos/arranjo1.jpeg?height=256&width=384&text=Cesta+Celebração",
+        "/arranjos/arranjo1.png?height=256&width=384&text=Cesta+Celebração",
       price: "R$ 219,90",
       tag: "Promoção",
     },
