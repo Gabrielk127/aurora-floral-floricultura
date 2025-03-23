@@ -53,7 +53,7 @@ export default function Testimonials() {
 
   return (
     <section className="py-16 bg-[#f2e6e5]">
-      <div className="max-w-7xl mx-auto px-8">
+      <div className="max-w-7xl mx-auto md:px-8">
         <div className="flex flex-col items-center mb-12">
           <Badge className="mb-2 bg-[#d8b5b4]/30 text-[#d8b5b4] hover:bg-[#d8b5b4]/30">
             O que dizem nossos clientes

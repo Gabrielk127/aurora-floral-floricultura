@@ -72,7 +72,7 @@ export default function Contact() {
         </div>
 
         {/* Contact Info Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-10 sm:mb-12">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-10 sm:mb-12">
           {[
             {
               icon: <MapPin className="h-5 w-5 text-[#d8b5b4]" />,
