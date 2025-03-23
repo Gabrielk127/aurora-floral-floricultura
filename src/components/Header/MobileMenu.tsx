@@ -68,7 +68,7 @@ const MobileMenu = () => {
       {/* Header fixo com o ícone do menu */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-lg shadow-lg py-4 max-w-[1200px] rounded-3xl mt-4 mx-4 flex justify-between items-center px-6">
         <div className="text-xl font-bold">
-          <Link href="#" className="flex items-center gap-2">
+          <Link href="/" className="flex items-center gap-2">
             <div className="relative h-8 w-8">
               <Image
                 src="/logo.png?height=32&width=32"
@@ -130,11 +130,11 @@ const MobileMenu = () => {
               animate={{ opacity: 1, y: 0, transition: { delay: 0.5 } }}
               className="mt-8"
             >
-              <a href="#contato">
+              <Link href="/#contato">
                 <button className="bg-[#d8b5b4] text-white px-6 py-3 rounded-xl hover:bg-[#b08e8d] transition duration-300">
                   Fazer Pedido
                 </button>
-              </a>
+              </Link>
             </motion.div>
           </motion.div>
         )}

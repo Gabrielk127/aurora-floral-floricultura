@@ -55,7 +55,7 @@ export default function Gallery() {
                 <TabsTrigger
                   key={tab}
                   value={tab}
-                  className="data-[state=active]:bg-[#d8b5b4] data-[state=active]:text-white"
+                  className="data-[state=active]:bg-[#d8b5b4] cursor-pointer data-[state=active]:text-white"
                 >
                   {tab.charAt(0).toUpperCase() + tab.slice(1)}
                 </TabsTrigger>
@@ -64,7 +64,7 @@ export default function Gallery() {
           </div>
 
           {Object.entries(galleryImages).map(([key, images]) => (
-            <TabsContent key={key} value={key} className="mt-0">
+            <TabsContent key={key} value={key} className="mt-0 ">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={key}

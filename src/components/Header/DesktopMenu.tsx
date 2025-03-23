@@ -6,11 +6,11 @@ import Link from "next/link";
 
 const DesktopMenu = () => {
   const menuItems = [
-    { label: "Início", href: "#" },
-    { label: "Sobre", href: "#sobre" },
-    { label: "Serviços", href: "#servicos" },
-    { label: "Galeria", href: "#galeria" },
-    { label: "Contato", href: "#contato" },
+    { label: "Início", href: "/" },
+    { label: "Sobre", href: "/#sobre" },
+    { label: "Serviços", href: "/#servicos" },
+    { label: "Galeria", href: "/#galeria" },
+    { label: "Contato", href: "/#contato" },
   ];
 
   return (

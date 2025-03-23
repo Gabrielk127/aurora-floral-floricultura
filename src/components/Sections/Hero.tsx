@@ -24,7 +24,7 @@ export default function Hero() {
           Aurora Floral
         </h1>
         <p className="text-lg md:text-xl max-w-2xl mb-8 text-shadow">
-          Transformando momentos especiais com a beleza natural das flores
+          Flores que encantam, momentos que florescem!
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
           <Button

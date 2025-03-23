@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Instagram, Facebook, Twitter } from "lucide-react";
+import { Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Footer() {
@@ -25,27 +25,19 @@ export default function Footer() {
               desde 2005.
             </p>
             <div className="flex space-x-3">
-              <Button
-                size="icon"
-                variant="ghost"
-                className="h-8 w-8 text-white hover:text-white hover:bg-[#b08e8d]"
+              <Link
+                rel="stylesheet"
+                target="_blank"
+                href="https://www.instagram.com/aurorafloral.floricultura/"
               >
-                <Instagram className="h-4 w-4" />
-              </Button>
-              <Button
-                size="icon"
-                variant="ghost"
-                className="h-8 w-8 text-white hover:text-white hover:bg-[#b08e8d]"
-              >
-                <Facebook className="h-4 w-4" />
-              </Button>
-              <Button
-                size="icon"
-                variant="ghost"
-                className="h-8 w-8 text-white hover:text-white hover:bg-[#b08e8d]"
-              >
-                <Twitter className="h-4 w-4" />
-              </Button>
+                <Button
+                  size="icon"
+                  variant="ghost"
+                  className="h-8 w-8 text-white hover:text-white hover:bg-[#b08e8d] cursor-pointer"
+                >
+                  <Instagram className="h-4 w-4" />
+                </Button>
+              </Link>
             </div>
           </div>
 
@@ -54,7 +46,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="#"
+                  href="/"
                   className="text-white/80 hover:text-white transition-colors"
                 >
                   Início
@@ -62,7 +54,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="#sobre"
+                  href="/#sobre"
                   className="text-white/80 hover:text-white transition-colors"
                 >
                   Sobre Nós
@@ -70,7 +62,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="#servicos"
+                  href="/#servicos"
                   className="text-white/80 hover:text-white transition-colors"
                 >
                   Serviços
@@ -78,7 +70,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="#galeria"
+                  href="/#galeria"
                   className="text-white/80 hover:text-white transition-colors"
                 >
                   Galeria
@@ -86,7 +78,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="#contato"
+                  href="/#contato"
                   className="text-white/80 hover:text-white transition-colors"
                 >
                   Contato
@@ -148,10 +140,16 @@ export default function Footer() {
             reservados.
           </p>
           <div className="flex gap-4 mt-4 md:mt-0">
-            <Link href="#" className="text-white/80 hover:text-white text-sm">
+            <Link
+              href="/termos-de-uso"
+              className="text-white/80 hover:text-white text-sm"
+            >
               Termos de Uso
             </Link>
-            <Link href="#" className="text-white/80 hover:text-white text-sm">
+            <Link
+              href="/politica-de-privacidade"
+              className="text-white/80 hover:text-white text-sm"
+            >
               Política de Privacidade
             </Link>
           </div>

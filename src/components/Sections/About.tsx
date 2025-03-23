@@ -23,7 +23,7 @@ export default function About() {
               Sobre a Aurora Floral
             </h2>
             <p className="text-muted-foreground mb-4">
-              Fundada em 2005, a Aurora Floral nasceu da paixão por flores e da
+              Fundada em 2025, a Aurora Floral nasceu da paixão por flores e da
               crença de que elas têm o poder de trazer alegria e transformar
               ambientes.
             </p>
@@ -36,13 +36,25 @@ export default function About() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
               {[
-                { value: "+2000", label: "Clientes Satisfeitos" },
-                { value: "+5000", label: "Arranjos Entregues" },
-                { value: "15+", label: "Anos de Experiência" },
-                { value: "100%", label: "Flores Frescas" },
+                {
+                  value: "Satisfação Garantida",
+                  label: "Nosso compromisso é encantar cada cliente.",
+                },
+                {
+                  value: "Produção Artesanal",
+                  label: "Cada arranjo é feito à mão com carinho.",
+                },
+                {
+                  value: "Amor pelas Flores",
+                  label: "Nascida da paixão por transformar momentos.",
+                },
+                {
+                  value: "Entrega Rápida",
+                  label: "Entregas ágeis para surpreender quem você ama.",
+                },
               ].map((stat, index) => (
                 <div key={index} className="bg-[#f2e6e5] p-4 rounded-lg">
-                  <p className="text-2xl font-bold text-[#d8b5b4]">
+                  <p className="text-xl font-bold text-[#d8b5b4]">
                     {stat.value}
                   </p>
                   <p className="text-sm text-muted-foreground">{stat.label}</p>

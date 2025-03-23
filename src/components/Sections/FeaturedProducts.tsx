@@ -7,7 +7,7 @@ import { ChevronRight, ChevronLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { useMediaQuery } from "@/app/hooks/use-media-query";
+import { useMediaQuery } from "@/hooks/use-media-query";
 
 export default function FeaturedProducts() {
   type Product = {
@@ -119,7 +119,7 @@ export default function FeaturedProducts() {
             Arranjos em Destaque
           </h2>
           <p className="text-muted-foreground text-center max-w-2xl">
-            Conheça nossos arranjos mais populares, criados com flores frescas e
+            Conheça nossos arranjos mais populares, criados com flores Secas e
             selecionadas para tornar qualquer momento especial.
           </p>
         </div>

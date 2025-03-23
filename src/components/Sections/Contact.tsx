@@ -1,18 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import {
-  MapPin,
-  Phone,
-  Mail,
-  Clock,
-  Instagram,
-  Facebook,
-  Twitter,
-} from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Contact() {
   const [isHovered, setIsHovered] = useState(false);
@@ -36,7 +29,7 @@ export default function Contact() {
         {/* WhatsApp Button - Positioned above contact info on mobile */}
         <div className="flex justify-center mb-8 sm:mb-12 order-first sm:order-none">
           <motion.a
-            href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20fazer%20um%20pedido%20na%20Aurora%20Floral!"
+            href="https://wa.me/5543999154860?text=Olá,%20gostaria%20de%20fazer%20um%20pedido%20na%20Aurora%20Floral!"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block w-full sm:w-auto"
@@ -89,15 +82,12 @@ export default function Contact() {
             {
               icon: <Phone className="h-5 w-5 text-[#d8b5b4]" />,
               title: "Telefone",
-              details: ["(11) 9999-9999", "(11) 8888-8888"],
+              details: ["(43) 99915-4860", "(43) 99629-7398"],
             },
             {
               icon: <Mail className="h-5 w-5 text-[#d8b5b4]" />,
               title: "Email",
-              details: [
-                "contato@aurorafloral.com.br",
-                "vendas@aurorafloral.com.br",
-              ],
+              details: ["aurorafloral.contato@gmail.com"],
             },
             {
               icon: <Clock className="h-5 w-5 text-[#d8b5b4]" />,
@@ -107,19 +97,19 @@ export default function Contact() {
           ].map((info, index) => (
             <div
               key={index}
-              className="flex items-start p-4 rounded-lg hover:bg-[#f2e6e5]/50 transition-colors duration-200"
+              className="flex flex-col items-center justify-start p-4 rounded-lg hover:bg-[#f2e6e5]/50 transition-colors duration-200"
             >
-              <div className="h-10 w-10 sm:h-12 sm:w-12 rounded-full bg-[#f2e6e5] flex items-center justify-center mr-3 sm:mr-4 shadow-sm flex-shrink-0">
+              <div className="h-10 w-10 sm:h-12 sm:w-12 rounded-full bg-[#f2e6e5] flex items-center justify-center shadow-sm flex-shrink-0">
                 {info.icon}
               </div>
               <div>
-                <h3 className="font-semibold mb-1 text-[#d8b5b4] text-sm sm:text-base">
+                <h3 className="font-semibold mb-1 text-[#d8b5b4] text-sm sm:text-base text-center mt-2">
                   {info.title}
                 </h3>
                 {info.details.map((detail, i) => (
                   <p
                     key={i}
-                    className="text-muted-foreground text-xs sm:text-sm"
+                    className="text-muted-foreground text-xs sm:text-sm text-center"
                   >
                     {detail}
                   </p>
@@ -135,21 +125,25 @@ export default function Contact() {
             Siga-nos nas redes sociais para novidades e inspirações florais
           </p>
           <div className="flex justify-center space-x-3 sm:space-x-4">
-            {[
-              { Icon: Instagram, label: "Instagram" },
-              { Icon: Facebook, label: "Facebook" },
-              { Icon: Twitter, label: "Twitter" },
-            ].map(({ Icon, label }, index) => (
-              <Button
-                key={index}
-                size="icon"
-                variant="outline"
-                className="rounded-full border-[#d8b5b4] hover:bg-[#f2e6e5] hover:text-[#d8b5b4] h-10 w-10 sm:h-12 sm:w-12"
-                aria-label={`Visite nosso ${label}`}
-              >
-                <Icon className="h-4 w-4 sm:h-5 sm:w-5" />
-              </Button>
-            ))}
+            <Link
+              rel="stylesheet"
+              target="_blank"
+              href="https://www.instagram.com/aurorafloral.floricultura/"
+            >
+              {[{ Icon: Instagram, label: "Instagram" }].map(
+                ({ Icon, label }, index) => (
+                  <Button
+                    key={index}
+                    size="icon"
+                    variant="outline"
+                    className="rounded-full border-[#d8b5b4] hover:bg-[#f2e6e5] hover:text-[#d8b5b4] h-10 w-10 sm:h-12 sm:w-12  cursor-pointer"
+                    aria-label={`Visite nosso ${label}`}
+                  >
+                    <Icon className="h-4 w-4 sm:h-5 sm:w-5" />
+                  </Button>
+                )
+              )}
+            </Link>
           </div>
         </div>
       </div>

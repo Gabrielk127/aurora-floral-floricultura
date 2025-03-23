@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Heart, CalendarIcon } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { useMediaQuery } from "@/app/hooks/use-media-query";
+import { useMediaQuery } from "@/hooks/use-media-query";
 
 function GiftIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
@@ -50,7 +50,8 @@ function HomeIcon(props: React.SVGProps<SVGSVGElement>) {
 const services = [
   {
     title: "Buquês & Arranjos",
-    description: "Criamos buquês e arranjos personalizados com flores frescas.",
+    description:
+      "Criamos buquês e arranjos personalizados com flores secas e frescas.",
     icon: Heart,
   },
   {
