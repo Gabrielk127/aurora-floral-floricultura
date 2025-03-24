@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -27,18 +28,23 @@ export default function Hero() {
           Flores que encantam, momentos que florescem!
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
-          <Button
-            size="lg"
-            className="cursor-pointer bg-white rounded-xl text-[#d8b5b4] hover:bg-[#b08e8d] transition duration-300 shadow-lg hover:text-white"
-          >
-            Nossos Produtos
-          </Button>
-          <Button
-            size="lg"
-            className="cursor-pointer bg-[#d8b5b4] rounded-xl text-white font-bold hover:bg-[#b08e8d]  transition duration-300 shadow-lg"
-          >
-            Entre em Contato
-          </Button>
+          <Link href="#galeria">
+            <Button
+              size="lg"
+              className="cursor-pointer bg-white rounded-xl text-[#d8b5b4] hover:bg-[#b08e8d] transition duration-300 shadow-lg hover:text-white"
+            >
+              Nossos Produtos
+            </Button>
+          </Link>
+
+          <Link href="#contato">
+            <Button
+              size="lg"
+              className="cursor-pointer bg-[#d8b5b4] rounded-xl text-white font-bold hover:bg-[#b08e8d]  transition duration-300 shadow-lg"
+            >
+              Entre em Contato
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

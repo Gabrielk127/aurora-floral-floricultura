@@ -21,20 +21,20 @@ export default function FeaturedProducts() {
     {
       name: "Buquê Van Gogh",
       image: "/buques/buque2.png?height=256&width=384&text=Buquê+Primavera",
-      price: "R$ 189,90",
+      price: "R$ 165,00",
       tag: "Mais Vendido",
     },
     {
       name: "Buquê Rosa",
       image: "/buques/buque1.png?height=256&width=384&text=Arranjo+Elegância",
-      price: "R$ 249,90",
+      price: "R$ 95,00",
       tag: "Novo",
     },
     {
       name: "Solitário Rosa",
       image:
         "/arranjos/arranjo1.png?height=256&width=384&text=Cesta+Celebração",
-      price: "R$ 219,90",
+      price: "R$ 38,00",
       tag: "Promoção",
     },
   ];
@@ -116,10 +116,10 @@ export default function FeaturedProducts() {
             Destaques
           </Badge>
           <h2 className="text-3xl font-bold text-center mb-4 text-[#d8b5b4]">
-            Arranjos em Destaque
+            Produtos em Destaque
           </h2>
           <p className="text-muted-foreground text-center max-w-2xl">
-            Conheça nossos arranjos mais populares, criados com flores Secas e
+            Conheça nossos Produtos mais populares, criados com flores Secas e
             selecionadas para tornar qualquer momento especial.
           </p>
         </div>
