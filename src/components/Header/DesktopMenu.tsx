@@ -20,7 +20,7 @@ const DesktopMenu = () => {
           className="text-[#d8b5b4] text-3xl font-bold cursor-pointer"
           whileHover={{ scale: 1.05 }}
         >
-          <Link href="#" className="flex items-center gap-2">
+          <Link href="/" className="flex items-center gap-2">
             <div className="relative h-10 w-10">
               <Image
                 src="/logo.png?height=40&width=40"

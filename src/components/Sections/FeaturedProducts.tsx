@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { useMediaQuery } from "@/hooks/use-media-query";
+import Link from "next/link";
 
 export default function FeaturedProducts() {
   type Product = {
@@ -97,12 +98,17 @@ export default function FeaturedProducts() {
         </div>
         <div className="flex justify-between items-center">
           <p className="font-semibold text-lg">{product.price}</p>
-          <Button
-            size="sm"
-            className="bg-[#d8b5b4] hover:bg-[#b08e8d] cursor-pointer"
+          <Link
+            href="https://wa.me/5543999154860?text=Olá,%20gostaria%20de%20fazer%20um%20pedido%20na%20Aurora%20Floral!"
+            target="_blank"
           >
-            Comprar
-          </Button>
+            <Button
+              size="sm"
+              className="bg-[#d8b5b4] hover:bg-[#b08e8d] cursor-pointer"
+            >
+              Comprar
+            </Button>
+          </Link>
         </div>
       </CardContent>
     </Card>
@@ -178,12 +184,14 @@ export default function FeaturedProducts() {
         </div>
 
         <div className="flex justify-center mt-12">
-          <Button
-            variant="outline"
-            className="border-[#d8b5b4] text-[#d8b5b4] hover:bg-[#f2e6e5] cursor-pointer"
-          >
-            Ver Todos os Produtos <ChevronRight className="ml-2 h-4 w-4" />
-          </Button>
+          <Link href="#galeria">
+            <Button
+              variant="outline"
+              className="border-[#d8b5b4] text-[#d8b5b4] hover:bg-[#f2e6e5] cursor-pointer"
+            >
+              Ver Todos os Produtos <ChevronRight className="ml-2 h-4 w-4" />
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

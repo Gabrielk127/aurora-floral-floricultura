@@ -13,17 +13,17 @@ export default function Testimonials() {
       rating: 5,
     },
     {
-      name: "Carlos Oliveira",
+      name: "Rafaela Oliveira",
       role: "Cliente Corporativo",
       content:
-        "Contratamos a Aurora para decoração de nosso evento corporativo e o resultado superou todas as expectativas. Profissionalismo e criatividade impecáveis.",
+        "Sou uma cliente fiel desde a inauguração, as flores secas duram muitas mais e consigo decorar minha casa com facilidade.",
       rating: 5,
     },
     {
       name: "Mariana Santos",
       role: "Noiva",
       content:
-        "Meu buquê de noiva e toda a decoração floral do casamento foram perfeitos! A equipe da Aurora Floral entendeu exatamente o que eu queria e executou com maestria.",
+        "Meu buquê de noiva ficou perfeito! A equipe da Aurora Floral entendeu exatamente o que eu queria e executou com maestria.",
       rating: 4,
     },
   ];

@@ -21,8 +21,7 @@ export default function Footer() {
               <span className="text-xl font-semibold">Aurora Floral</span>
             </div>
             <p className="text-white/80 mb-4">
-              Transformando momentos especiais com a beleza natural das flores
-              desde 2005.
+              Transformando momentos especiais com a beleza natural das flores.
             </p>
             <div className="flex space-x-3">
               <Link
@@ -90,46 +89,11 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-lg mb-4">Serviços</h3>
             <ul className="space-y-2">
-              <li>
-                <Link
-                  href="#"
-                  className="text-white/80 hover:text-white transition-colors"
-                >
-                  Buquês & Arranjos
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="text-white/80 hover:text-white transition-colors"
-                >
-                  Presentes Especiais
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="text-white/80 hover:text-white transition-colors"
-                >
-                  Decoração de Ambientes
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="text-white/80 hover:text-white transition-colors"
-                >
-                  Eventos
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="text-white/80 hover:text-white transition-colors"
-                >
-                  Assinaturas Florais
-                </Link>
-              </li>
+              <li>Buquês & Arranjos</li>
+              <li>Presentes Especiais</li>
+              <li>Decoração de Ambientes</li>
+              <li>Eventos</li>
+              <li>Assinaturas Florais</li>
             </ul>
           </div>
         </div>
